@@ -1,0 +1,179 @@
+<%-include('./includes/header')%>
+
+<p><strong>uBill, where innovation meets simplicity!. We are a leading<br>
+   technology company dedicated to revolutionizing the way<br>
+   businesses manage their billing processes. With a strong<br>
+   focus on efficiency,reliability, and customer satisfaction,<br>
+   we provide cutting-edge solutions that empower organizations<br>
+   to streamline their billing operations and drive growth. Our<br>
+   solutions are designed to automate and optimize billing<br>
+   processes, ensuring accuracy, efficiency, and scalability.<br>
+   Whether you're a small startup, a medium-sized enterprise,<br>
+   or a large corporation, we have the perfect solution to meet<br>
+   your unique needs.</strong></p>
+
+<%-include('./includes/footer')%>
+
+<style>
+    /* UTILITIES */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+p{
+   
+  font-family:Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   ; 
+text-align: center;
+font-size: 20px;
+margin-top: 12%;
+color: white;
+line-height: 30px;
+word-spacing:5px ;
+}
+
+
+ @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+ body {
+   
+ background-image: url('/ubillPic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "Roboto", sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale; 
+} 
+
+a {
+text-decoration: none;
+}
+
+li {
+list-style: none;
+}
+
+
+
+/*/* NAVBAR STYLING STARTS */
+.navbar {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #bdc3c7;
+    color: l
+    }
+    
+    .nav-links a {
+    color:#1B1464;
+    }
+    
+    /* LOGO */
+    .logo {
+    font-size: 50px;
+    color: #1B1464;
+    margin-left: 5px;
+    }
+    
+    /* NAVBAR MENU */
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    }
+    
+    .menu li:hover {
+    background-color: #0fbcf9;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    }
+    
+    .menu li {
+    padding: 5px 14px;
+    }
+    
+    
+
+
+
+
+
+    /* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+     display: none;
+     } 
+     
+     /* HAMBURGER MENU */
+     .hamburger {
+     display: none;
+ font-size: 20px;
+     user-select: none;
+     }
+     
+     /* APPLYING MEDIA QUERIES */
+     @media (max-width: 500px) {
+     .menu {
+     display:none;
+     position: absolute;
+    background-color: #bdc3c7 ;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+     }
+     
+     .menu li:hover {
+     display: inline-block;
+     background-color:#0fbcf9;
+     transition: 0.3s ease;
+     }
+     
+     .menu li + li {
+     margin-top: 12px;
+      }
+     
+     input[type=checkbox]:checked ~ .menu {
+     display: block;
+     }
+     
+     .hamburger {
+     display: block;
+     }
+     
+     .dropdown {
+     left: 50%;
+     top: 30px;
+     transform: translateX(35%);
+     }
+     
+ .dropdown li:hover {
+     background-color: #0fbcf9;
+}
+     }
+
+     footer{
+          background-color: #bdc3c7;
+           display: flex;
+          align-items: center;
+          justify-content: center;
+          position: sticky;
+          text-align: center;
+          font-size: 15px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          color:#1B1464;
+     }
+</style>
+
+
+</html>

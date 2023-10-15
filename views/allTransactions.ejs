@@ -1,0 +1,16 @@
+<%-include('./includes/header')%>
+
+<div class="all">
+    <% if(all > 0){ %>
+    <a href="/all/<%=all._id%>">
+    <%forEach(all =>{%>
+    <%all.name %>
+</a>
+    <%})%>
+    <%else{%>
+        <p>no  transaction made</p>
+    <% }%>
+
+</div>
+
+<%-include('./includes/footer')%>

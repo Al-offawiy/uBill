@@ -1,0 +1,171 @@
+<%-include('./includes/header')%>
+
+<h1 class="name">uBill</h1>
+
+<%-include('./includes/footer')%>
+
+<style>
+    
+    /* UTILITIES */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.name{
+font: 150px sans-serif;
+margin-left: 600px;
+margin-top: 250px;
+color: rgba(0,0,0,0.5);
+}
+
+p{
+ font-family: "Roboto", sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;   
+text-align: center;
+font-size: 100px;
+margin-top: 28%;
+color: #1B1464;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+ body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   
+  background-image: url('/ubillPic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+} 
+
+a {
+text-decoration: none;
+}
+
+li {
+list-style: none;
+}
+
+
+
+/*/* NAVBAR STYLING STARTS */
+.navbar {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #bdc3c7;
+    color: l
+    }
+    
+    .nav-links a {
+    color:#1B1464;
+    }
+    
+    /* LOGO */
+    .logo {
+    font-size: 50px;
+    color: #1B1464;
+    margin-left: 5px;
+    }
+    
+    /* NAVBAR MENU */
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    }
+    
+    .menu li:hover {
+    background-color: #0fbcf9;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    }
+    
+    .menu li {
+    padding: 5px 14px;
+    }
+    
+    
+
+
+
+
+
+    /* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+     display: none;
+     } 
+     
+     /* HAMBURGER MENU */
+     .hamburger {
+     display: none;
+ font-size: 20px;
+     user-select: none;
+     }
+     
+     /* APPLYING MEDIA QUERIES */
+     @media (max-width: 500px) {
+     .menu {
+     display:none;
+     position: absolute;
+    background-color: #bdc3c7 ;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+     }
+     
+     .menu li:hover {
+     display: inline-block;
+     background-color:#0fbcf9;
+     transition: 0.3s ease;
+     }
+     
+     .menu li + li {
+     margin-top: 12px;
+      }
+     
+     input[type=checkbox]:checked ~ .menu {
+     display: block;
+     }
+     
+     .hamburger {
+     display: block;
+     }
+     
+     .dropdown {
+     left: 50%;
+     top: 30px;
+     transform: translateX(35%);
+     }
+     
+ .dropdown li:hover {
+     background-color: #0fbcf9;
+}
+     }
+
+     footer{
+          background-color: #bdc3c7;
+           display: flex;
+          align-items: center;
+          justify-content: center;
+          position: sticky;
+          text-align: center;
+          font-size: 15px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          color:#1B1464;
+     }
+</style>
+
+
+</html>
