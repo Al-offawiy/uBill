@@ -11,12 +11,17 @@ const msgSchema = new Schema({
         type: String,
         required: true
        },
-
+       by:{
+        type:Schema.Types.ObjectId,
+        ref:'user',
+        required:true
+    },
        createdAt:{
         type: Date,
         default:Date.now,
         required: true,
        },
+       
     //    writtenBy:{
     //     type : Schema.Types.ObjectId,
     // ref:'user',

@@ -3,9 +3,11 @@
 <div class="payment-form">
     <div class="form">
      
-      <form action="/payElectricity" method="post" class="pay-form" >
-        <select  type="text" name="biller_code" placeholder="Electricity company" required>
-          <option value="">Abuja Electricity Distribution Company (AEDC)</option>
+      <form action="/buyElectricity" method="post" class="pay-form" >
+        <select  type="text" name="serviceID" required>
+          <option></option>
+          <option value="ikeja-electric">Ikeja Electricity Distribution Company (IEDC)</option>
+          <option value="abuja-electric">Abuja Electricity Distribution Company (AEDC)</option>
           <option value="eko-electric">Eko Electricity Distribution Company (EKEDC)</option>
           <option value="ibadan-electric">Ibadan Electricity Distribution Company (IBEDC)</option>
           <option value="BIL110">Ikeja Electricity Distribution Company (IKEDC)</option>
@@ -44,7 +46,10 @@ color: #1B1464;
 
 
 body {
-background: #55efc4;
+  background-image: url('/ubillPic.jpg');
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-size: 100% 100%;
 font-family: cursive;
 } 
 
@@ -232,8 +237,8 @@ font-size: 10px;
   cursor: pointer;
   
 }
-.form button:hover,.form button:active,.form button:focus {
-  background: #bdc3c7;
+ button:active{
+  background: #656869;
 }
 .form .message {
   margin: 15px 0 0;

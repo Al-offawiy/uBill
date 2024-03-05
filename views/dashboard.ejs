@@ -3,19 +3,20 @@
 <div class="dash">
 
     <div class="right" >
-        <img src="/userPic.png" alt="profile-pic" width="150px" height="150px" style=" margin-top:30px; margin-left:95px; border-radius:350px; " >
- <h1 class="info"><%=user.first_name%></h1><br><br>
+        <img src="/userPic.png" alt="profile-pic" width="150px" height="150px" style=" margin-top:35px; margin-left:60px; border-radius:350px; " >
+ 
 
-  <p class=" ">Balance: ₦500</p><br><hr style="background-color:#bdc3c7;padding-top: 1px;" ><br><br><br><br>
+  <!-- <p class=" ">Balance: ₦500</p>--><br><br><br><hr style="background-color:#bdc3c7; padding-top: 1px;" ><br><br><br><br> 
 <a href="/user/fundWallet" style="color: #1B1464; font-size: 20px;" class="buy">fund wallet</a><br><br> 
-<a href="/user/buyElectricity" style="color: #1B1464; font-size: 20px;" class="buy">buy electricity</a><br><br>
+<a href="/user/payElectricity" style="color: #1B1464; font-size: 20px;" class="buy">buy electricity</a><br><br>
 <a href="/user/crm" style="color: #1B1464; font-size: 20px;" class="buy">feedback & complaint</a><br><br>
 <a href="/user/logout" style="color: #1B1464; font-size: 20px;" class="buy">logout</a>
 </div>
 
     <div class="left">
-<img src="/ubillPic.jpg" alt="main" width="1366px"  height="710px">
+<img src="/ubillPic.jpg" alt="main" width="1199px"  height="710px">
 </div>
+
 
 </div>
 <%-include('./includes/footer')%>
@@ -45,7 +46,7 @@ box-sizing: border-box;
 
 
 .right{
-   background-color:#55efc4 ;
+   background-color:#6c90c5cc;
    width: 20%;
     height:710px; 
     float:left
@@ -222,4 +223,5 @@ input[type=checkbox] {
           width: 100%;
           color:#1B1464;
      }
+
 </style>

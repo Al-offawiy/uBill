@@ -2,8 +2,7 @@
 
 <div class="login-page">
     <div class="form">
-<form  action="/user/CRM" method="post" class="msg-form">
-<p style="color: white; font-size: 12px;">Response will be sent to the email inputed!</p><br>
+<form  action="/user/CRM" method="post" class="msg-form"><br>
     <input type="email" name="email" placeholder="Email"/>
 
 <label for="message"></label>
@@ -40,7 +39,10 @@ color: #1B1464;
  @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
  body {
-    background-color: #55efc4;
+  background-image: url('/ubillPic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
  font-family: "Roboto", sans-serif;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;   
@@ -187,7 +189,7 @@ input[type=checkbox] {
   padding: 40px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .form textarea{
@@ -226,8 +228,8 @@ input[type=checkbox] {
   cursor: pointer;
   
 }
-.form button:hover,.form button:active,.form button:focus {
-  background: #bdc3c7;
+button:active{
+  background: #656869;
 }
 .form .message {
   margin: 15px 0 0;

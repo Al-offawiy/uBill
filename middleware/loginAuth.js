@@ -51,6 +51,26 @@ const getUser = (req, res, next) =>{
     }
 
 
+
+
+    // const getId = (req, res, next) =>{
+    //     const token = req.cookies.envelope
+    //     if(token){   
+    //         jwToken.verify(token,'casablanca de catamatophia', async (err,decodedToken)=>{
+    //             if (decodedToken){
+    //                 let info = await appUser.findById(decodedToken.id)
+    //                 req.info = info._id;
+    //              next()   
+    //             }else{
+    //                 console.log("incorrect token")
+    //              }
+    //     })
+    // }else{
+    //         console.log("No token")    
+    //     }
+    //     }
+
+
 module.exports = {checkToken, getUser}
 
 
