@@ -19,7 +19,7 @@ const main = require('./db');
 
 dotenv.config();
 main().catch(err => console.log(err));
-const PORT =  3000;
+const PORT = process.env.PORT || 5000;
 seedAdmin();
  app.use(express.json());
  app.use(express.urlencoded({extended:true}));
@@ -98,5 +98,5 @@ app.get('*', (req,res) => {
 // app.get('*',checkToken);
 
  app.listen(PORT,() => {
-console.log("APP is 3000 ")
+console.log("APP is running on port "+PORT)
  })
